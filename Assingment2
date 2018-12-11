@@ -1,0 +1,61 @@
+#1.write a program that accepts a sequence of comma separated numbers from a console and generate a list
+values = input("Input some comma seprated numbers : ")
+list = values.split(",")
+print('List : ',list)
+
+OUTPUT
+Input some comma seprated numbers : lion,tiger,cat,dog
+List :  ['lion', 'tiger', 'cat', 'dog']
+
+#2.Write a Python program to construct the following pattern, using a nested for loop.
+
+* 
+* * 
+* * * 
+* * * * 
+* * * * * 
+* * * * 
+* * * 
+* * 
+*
+n=5;
+for i in range(n):
+    for j in range(i):
+        print ('* ', end="")
+    print('')
+
+for i in range(n,0,-1):
+    for j in range(i):
+        print('* ', end="")
+    print('')
+    
+    OUTPUT
+* 
+* * 
+* * * 
+* * * * 
+* * * * * 
+* * * * 
+* * * 
+* * 
+* 
+
+#3.Write a Python program that accepts a word from the user and reverse it.
+word = input("Input a word to reverse: ")
+
+for char in range(len(word) - 1, -1, -1):
+  print(word[char], end="")
+print("\n")
+
+OUTPUT
+Input a word to reverse: kishan
+nahsik
+
+#4.write a python program to print the given string in the format specified in the sample output
+print("WE, THE PEOPLE OF INDIA, \n\thaving solemnly resolved to constitute India into a SOVEREIGN,!\n\tSOCIALIST, SECULAR, DEMOCRATIC REPUBLIC \n\tand to secure to all its citizens")
+
+OUTPUT
+WE, THE PEOPLE OF INDIA, 
+	having solemnly resolved to constitute India into a SOVEREIGN,!
+	SOCIALIST, SECULAR, DEMOCRATIC REPUBLIC 
+	and to secure to all its citizens
